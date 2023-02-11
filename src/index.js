@@ -2,12 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import FirsApp from './FirstApp';
+import ComponentsApp from './ComponentApp';
+import GiftExpertApp from './GiftExpertApp';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <FirsApp value={10} /> */}
+    <FirsApp value={5} />
+    <ComponentsApp />
+    <GiftExpertApp />
+
   </React.StrictMode>
 );
 
