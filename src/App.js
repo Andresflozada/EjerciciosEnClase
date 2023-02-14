@@ -23,9 +23,9 @@ const App = () => {
 function prueba() {
   return (
     <div className="App">
-      <h1 className="P1">Esto es un título</h1>
+      <h1 className="P1">Probando cositas</h1>
       <header className="App-header">
-        <p className="P1">Hola mundo, bienvenido</p>
+        <p className="P2">Hola mundo, bienvenido!!! :D</p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -34,7 +34,7 @@ function prueba() {
         >
           Learn React 1
         </a>
-        <p className="P1">Esto es una prueba</p>
+        <p className="P3">Ejercicios en clase ....</p>
       </header>
     </div>
   );

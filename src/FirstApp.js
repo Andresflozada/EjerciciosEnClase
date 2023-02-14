@@ -2,11 +2,7 @@ import { useState } from "react";
 
 const title = "First App";
 
-// const FirsApp = () => {
 
-// }
-// { value }
-// [ value ]
 const FirsApp = ({ value }) => {
   // const counter = 0;
 

@@ -14,13 +14,13 @@
 }
 
 .App-header {
-  background-color: #e1a5ff;
-  min-height: 40vh;
+  background-color: #efc1ed;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: rgb(197, 20, 20);
 }
 
@@ -29,7 +29,18 @@
 }
 
 .P1{
-  color: #18bc5a;
+  background-color: #4ccbd4;
+
+  color: #070707;
+}
+.P2{
+
+  
+  color: #5f0364;
+}
+.P3{
+  
+  color: #383737;
 }
 
 @keyframes App-logo-spin {
