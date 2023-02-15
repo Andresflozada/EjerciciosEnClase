@@ -1,4 +1,4 @@
-const categories = ['first category', 'second category'];
+const categories = ['Señales', 'Diseño Multimedia 1', 'Ingles V' ];
 
 export const ComponentsApp = () => {
   return (

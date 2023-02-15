@@ -5,6 +5,8 @@ import App from './App';
 import FirsApp from './FirstApp';
 import ComponentsApp from './ComponentApp';
 import GiftExpertApp from './GiftExpertApp';
+import { AddCategory } from './AddCategory';
+import { GifGrid } from './GifGrid';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
