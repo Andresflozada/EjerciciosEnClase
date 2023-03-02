@@ -3,7 +3,7 @@ import { useState} from 'react'
 
 export const AddCategory = ({onAddCategory}) => {
 
-    const [inputValue, setinputValue] = useState('...')
+    const [inputValue, setinputValue] = useState('')
 
     const onInputChange = (evt) => {
         setinputValue(evt.target.value) 

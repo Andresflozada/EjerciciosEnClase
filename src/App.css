@@ -1,5 +1,16 @@
+.Card{
+  width: 100px;
+  /* height: 100px; */
+}
+
 .App {
   text-align: center;
+}
+
+.Counter{
+  position: absolute;
+  top: 30%;
+  left: 40%;
 }
 
 .App-logo {

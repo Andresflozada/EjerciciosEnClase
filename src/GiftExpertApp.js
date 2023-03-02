@@ -1,12 +1,13 @@
 import { useState } from "react";
-import { AddCategory  } from "./AddCategory";
-import { GifGrid } from "./GifGrid"; 
+import { AddCategory } from "./AddCategory";
+import { GifGrid } from "./GifGrid";
+// import { GifGrid } from './GetGifs';
 
 export const GiftExpertApp = () => {
-  const [categories, setCategories] = useState(["Zodiac"]);
+  const [categories, setCategories] = useState([""]);
   const [category, setCategory] = useState("");
-  const onAddCategory = () => {
-    setCategories((list) => [...list, category]);
+  const onAddCategory = (inputCategory) => {
+    setCategories((list) => [...list, inputCategory]);
   };
 
   const onSetCategory = (evt) => {
@@ -16,24 +17,11 @@ export const GiftExpertApp = () => {
   return (
     <>
       <h1>GiftExpert</h1>
-
-      <input
-        type="text"
-        value={category}
-        onChange={(event) => onSetCategory(event)}
-      />
-      <button onClick={() => onAddCategory()}>Add Category</button>
-
-      {/* <AddCategory onAddCategory={onAddCategory} /> */}
-
-      <ol>
-        {categories.map((category, key) => {
-          return <li key={key}>{category}</li>;
-        })}
-      </ol>
-      {/* {categories.map((category, key) => {
-        return <GifGrid category={category} key={key} />;
-      })} */}
+      
+      <AddCategory onAddCategory={onAddCategory} />
+      {categories.map((category_in_list) => {
+        return <GifGrid category={category_in_list} />;
+      })}
     </>
   );
 };

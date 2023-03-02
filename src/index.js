@@ -7,6 +7,12 @@ import ComponentsApp from './ComponentApp';
 import GiftExpertApp from './GiftExpertApp';
 import { AddCategory } from './AddCategory';
 import { GifGrid } from './GifGrid';
+// import { GifGrid } from './GetGifs';
+import Counter from './Counter/Counter';
+import { Tiempo } from './tiempo';
+import { UseFetch } from './Hooks/useFetch';
+import QuoteComponent from './QuoteComponent'; 
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,9 +20,16 @@ root.render(
   <React.StrictMode>
     <App />
     {/* <FirsApp value={10} /> */}
-    <FirsApp value={5} />
-    <ComponentsApp />
-    <GiftExpertApp />
+    {/* <FirsApp value={5} /> */}
+    {/* <ComponentsApp /> */}
+    {/* <GiftExpertApp /> */}
+    {/* <GifGrid /> */}
+    {/* <AddCategory/> */}
+    {/* <Counter/> */}
+    {/* <Tiempo />  */}
+    {/* <UseFetch/> */}
+    <QuoteComponent/>
+
 
   </React.StrictMode>
 );
