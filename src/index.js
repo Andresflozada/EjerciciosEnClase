@@ -12,23 +12,46 @@ import Counter from './Counter/Counter';
 import { Tiempo } from './tiempo';
 import { UseFetch } from './Hooks/useFetch';
 import QuoteComponent from './QuoteComponent'; 
+import {FocusScreen } from './components/FocusScreen';
+import { Memorize } from './Memorize';
+import { MemoHook } from './Memo';
+import { Father } from './Father';
+import { Provider } from 'react-redux';
+import store  from './store';
+import TodoApp from './TodoApp';
+import { BrowserRouter } from 'react-router-dom';
+import { MainApp } from './MainApp';
+
 
 import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />        
+      </BrowserRouter>
+    </Provider>
+
+    <TodoApp/>
+    <MainApp/>
     {/* <FirsApp value={10} /> */}
     {/* <FirsApp value={5} /> */}
     {/* <ComponentsApp /> */}
-    {/* <GiftExpertApp /> */}
-    {/* <GifGrid /> */}
-    {/* <AddCategory/> */}
+    {/* <GiftExpertApp />
+    <GifGrid />
+    <AddCategory/> */}
     {/* <Counter/> */}
     {/* <Tiempo />  */}
     {/* <UseFetch/> */}
-    <QuoteComponent/>
+    {/* <QuoteComponent/> */}
+    {/* <FocusScreen/> */}
+    {/* <Memorize/> */}
+    {/* <MemoHook/> */}
+    {/* <Father/> */}
+    
 
 
   </React.StrictMode>
